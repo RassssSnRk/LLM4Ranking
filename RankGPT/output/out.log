@@ -1,0 +1,29 @@
+####################
+Evaluation on nfc
+####################
+Oct 03, 2024 10:54:30 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+100%|████████████████████████████████████████████████████████████████████████████████| 323/323 [00:02<00:00, 152.16it/s]
+100%|███████████████████████████████████████████████████████████████████████████████| 323/323 [1:35:07<00:00, 17.67s/it]
+write_file
+name =  ~/.cache/pyserini/topics-and-qrels/qrels.beir-v1.0.0-nfcorpus.test.txt
+/home/rassss/RankGPT/trec_eval.py:136: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  run = pd.read_csv(run, delim_whitespace=True, header=None)
+/home/rassss/RankGPT/trec_eval.py:137: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  qrels = pd.read_csv(qrels, delim_whitespace=True, header=None)
+{'NDCG@1': 0.52597, 'NDCG@5': 0.44601, 'NDCG@10': 0.39799, 'MAP@1': 0.07059, 'MAP@5': 0.13461, 'MAP@10': 0.1529, 'Recall@1': 0.07059, 'Recall@5': 0.15252, 'Recall@10': 0.18096}
+####################
+Evaluation on touche
+####################
+100%|███████████████████████████████████████████████████████████████████████████████████| 49/49 [00:01<00:00, 25.09it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████| 49/49 [20:00<00:00, 24.50s/it]
+write_file
+name =  ~/.cache/pyserini/topics-and-qrels/qrels.beir-v1.0.0-webis-touche2020.test.txt
+/home/rassss/RankGPT/trec_eval.py:136: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  run = pd.read_csv(run, delim_whitespace=True, header=None)
+/home/rassss/RankGPT/trec_eval.py:137: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  qrels = pd.read_csv(qrels, delim_whitespace=True, header=None)
+{'NDCG@1': 0.47959, 'NDCG@5': 0.36694, 'NDCG@10': 0.34124, 'MAP@1': 0.03467, 'MAP@5': 0.09349, 'MAP@10': 0.12482, 'Recall@1': 0.03467, 'Recall@5': 0.1251, 'Recall@10': 0.19827}
+####################
+
+
